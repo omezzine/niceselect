@@ -4,8 +4,7 @@ niceselect - style your select tag ;)
 niceselect is a jQuery plugin for styling the select tag, the main idea is to create a new list 
 element based on the select tag
 
-**Note**: The master branch contains the new version 0.3 which is not released
-          yet and is not compatible with [0.2](https://github.com/jsor/jcarousel/tree/0.2).
+**Note**: The master branch contains the latest version
 
 Documentation
 -------------
