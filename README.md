@@ -1,4 +1,4 @@
-niceselect - style your select tag ;)
+niceselect - style your select tag
 ========================================
 
 niceselect is a jQuery plugin for styling the select tag, the main idea is to create a new list 
@@ -11,8 +11,8 @@ Documentation
 
 Easy to use :)
 
-        ```$("select").niceselect();
-        ```
+        $("select").niceselect();
+        
 You can check out the* [Demo](http://google.com) 
 
 
