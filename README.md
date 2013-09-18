@@ -2,7 +2,7 @@ niceselect - style your select tag
 ========================================
 
 niceselect is a jQuery plugin for styling the select tag, the main idea is to create a new list 
-element based on the select tag
+element based on the select tag so you will be able to style it as you like and all events will be trigged 
 
 **Note**: The master branch contains the latest version
 
