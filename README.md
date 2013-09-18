@@ -5,6 +5,7 @@ niceselect is a jQuery plugin for styling the select tag, the main idea is to cr
 element based on the select tag so you will be able to style it as you like and all events will be trigged 
 
 **Note**: The master branch contains the latest version
+A [Demo](http://google.com) is availabe here, check it now 
 
 Documentation
 -------------
@@ -12,9 +13,6 @@ Documentation
 Easy to use :)
 
         $("select").niceselect();
-        
-You can check out the* [Demo](http://google.com) 
-
 
 ### Features
 
