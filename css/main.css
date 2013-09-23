@@ -1,0 +1,115 @@
+
+
+
+
+
+
+
+
+/*--------- ToTabs ----------*/
+.tabs-header-{
+    background-color: #EEEEEE;
+    border-radius: 4px 4px 4px 4px;
+    list-style: none outside none;
+    margin: 10px 0;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    width: auto;
+}
+
+.tabs-header- li {  
+     float: left;   
+    margin-right: 12px;
+}
+.head {
+  height: 50px;
+  line-height: 50px;
+  color: #333333;
+  cursor: pointer;   
+  background-color: #EEEEEE;
+  border-radius: 4px 4px 4px 4px;
+}
+.head.active{
+   background-color: #D5D5D5;
+   color: #555555;
+   display:block;
+}
+
+.tabs-header- li a{
+    color: #333333;
+    padding: 0 5px;
+}
+.tabs-header- li.active > a, .tabs-header- li > a:hover{
+   background-color: #D5D5D5;
+   color: #555555;
+   display:block;
+   text-decoration: none;
+}  
+
+
+
+
+
+
+
+
+/*----------- Nice Select Default Style -------*/
+.nice-select-container {
+   width: 260px;
+   position: relative;
+}
+.nice-select-header {
+    line-height: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: #428BCA;
+    color: #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    display: block;
+    text-align: center;
+}
+.nice-select-header:hover{
+   color: #777777;
+    text-decoration: none;
+}
+
+.nice-select-options{
+    background-clip: padding-box;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    float: left;
+    left: 0;
+    list-style: none outside none;
+    margin: 2px 0 0;
+    width: 100%;
+    padding: 5px 0;
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+}
+.nice-select-options  > li > a{
+    clear: both;
+    color: #333333;
+    display: block;
+    font-weight: normal;
+    line-height: 1.42857;
+    padding: 3px 20px;
+    white-space: nowrap;
+}
+.nice-select-options  > li > a:focus, .nice-select-options  > li > a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #0081c2;
+    background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+	  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+	  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+	  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+	  background-repeat: repeat-x;
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
+}
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css"  media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/main.css"  media="screen" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.niceselect-0.1.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/qunit/qunit-1.12.0.js"></script>
+</head>
+
+<script>
+  $(document).ready(function(){
+   // Call Slider Plugin 
+
+ $("#mySelect").change(function(){
+   alert($(this).val());
+})
+     
+	 
+	 test( "niceselect test", function() {
+	    ok( 1 == "1", "passed !");
+		
+	 })
+	 
+ })
+
+
+
+</script>
+
+<html>
+	<body>
+        <div class="container">
+			<div class="row">
+			 <section id="typography">
+					<div class="page-header">
+						<h1>Nice Select Plugin</h1>
+					</div>
+						<select id="mySelect" onchange="alert('changed')">
+							<option value="1" id="1">option 1</option>
+							<option value="2">option 2</option>
+							<option value="3">option 3</option>
+							<option value="4">option 4</option>
+						</select>
+						
+						<h3>Html :</h3> 
+						 <pre class="prettyprint">
+						 
+						 </pre>
+						<h3>JavaScript :</h3>						
+						<pre class="prettyprint">$("select").niceselect();</pre>
+						
+						<h3>CSS :</h3>
+						<pre class="prettyprint linenums">
+.nice-select-container {
+   width: 260px;
+   position: relative;
+}
+.nice-select-header {
+	line-height: 20px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	background-color: #428BCA;
+	color: #FFFFFF;
+	border-radius: 5px 5px 5px 5px;
+	display: block;
+	text-align: center;
+}
+.nice-select-header:hover{
+   color: #777777;
+   text-decoration: none;
+}
+
+.nice-select-options{
+	background-clip: padding-box;
+	background-color: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 6px 6px 6px 6px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	float: left;
+	left: 0;
+	list-style: none outside none;
+	margin: 2px 0 0;
+	width: 100%;
+	padding: 5px 0;
+	position: absolute;
+	top: 100%;
+	z-index: 1000;
+}
+.nice-select-options  > li > a{
+	clear: both;
+	color: #333333;
+	display: block;
+	font-weight: normal;
+	line-height: 1.42857;
+	padding: 3px 20px;
+	white-space: nowrap;
+}
+.nice-select-options  > li > a:focus, .nice-select-options  > li > a:hover {
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #0081c2;
+	background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+	background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+	background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+	background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
+}
+						</pre>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>
