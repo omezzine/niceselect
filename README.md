@@ -13,7 +13,7 @@ Documentation
 
 Easy to use 
 
-         <select id="mySelect">
+       <select id="mySelect">
 	  <option value="1">option 1</option>
 	  <option value="2">option 2</option>
 	  <option value="3">option 3</option>
