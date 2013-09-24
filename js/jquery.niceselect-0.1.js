@@ -2,19 +2,18 @@
 *  jQuery Plugin 
 *  Version 0.1 
 *  Author Omezzine Mohamed
-* 
-*  Require jQuery 1.5+ 
+*  Tested on jquery 2 
 ****************************/
 
 (function($){
- $.fn.niceSelect=function(opts)
+ $.fn.niceselect=function(opts)
     {
 
-     // default configuration
+        // default configuration
 
      var config = $.extend({}, {
 			mainClass: "nice-select-container",
-            ulClass:"nice-select-options"
+                        ulClass:   "nice-select-options"
 		           }, opts); 
 
      var EVENTS = [ "onmouseover", "onclick", "onchange", "ondblclick"]
@@ -83,10 +82,10 @@
 	       })		
 		   
      // Triger  jQuery events
+               $self.change(function(){}); 
  	       $.each($._data($self[0], "events" ), function(e) {
-              $customNewListContainer.bind(e, function(){
-			   alert(e);
-       	       $self.trigger(e); 			   
+                  $customNewListContainer.bind(e, function(){
+       	          $self.trigger(e); 			   
               })
            }); 
       
@@ -97,11 +96,12 @@
 		  var $li = $(this)
 		   $li.click(function(){
 		      $allList.show();
+                      $self[0].selectedIndex = -1; 
 		      $self.find("option[value='"+$li.data('value')+"']").attr('selected', 'selected');
-              $self.trigger('change');
-			  $li.hide();
-			  $newListHeader.html($li.text()); /*change the header text*/
-			  $newListElement.hide();
+                      $self.trigger('change');
+	              $li.hide();
+		      $newListHeader.html($li.text()); /*change the header text*/
+		      $newListElement.hide();
            })		   
 		})
 
@@ -110,20 +110,18 @@
       })
 
 	  
+
 // Private functions
+
  function debug($obj) {
     if (window.console && window.console.log)
       window.console.log('hilight selection count: ' + $obj.size());
   };
   
- function updateHeader(){
-   
- }
-
 function triggerInlineEvent(obj, e){	
        switch(e){
 	     case "onclick": obj.onclick();break;
-		 case "onmouseover": obj.onmouseover();break;
+             case "onmouseover": obj.onmouseover();break;
 	     default: "donothing"	   
 	   }
  };
